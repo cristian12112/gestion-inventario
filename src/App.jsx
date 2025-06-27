@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { AuthContextProvider } from './context/AuthContext'
+import { MyRoutes } from './routers/routes'
 // import { UserAuth } from './context/AuthContext'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
 
   return(
     <AuthContextProvider>
-      <span>hola desde pp</span>
+      <MyRoutes/>
     </AuthContextProvider>
   )
   // return(
